@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio VER 6.4</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/plugins/jquery-1.12.3.js"></script>
+  <script src="js/plugins/jquery.easing.min.js"></script>
+  <script src="js/plugins/wow.min.js"></script>
+  <script src="js/function.js"></script>
+
+  <link href="_css/animated-masonry-gallery.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="_scripts/jquery-2.0.2.min.js"></script>
+  <script type="text/javascript" src="_scripts/jquery-ui-1.10.4.min.js"></script>
+  <script type="text/javascript" src="_scripts/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="_scripts/animated-masonry-gallery.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div class="container">
+        <h2 class="sr-only">portfolio menu</h2>
+
+        <nav>
+          <ul class="gnb clearfix">
+            <li class="on"><a href="#">HOME</a></li>
+            <li><a href="#">HISTORY</a></li>
+            <li><a href="#">PUBLISHING</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+
+    <section id="home" class="content0">
+      <div class="container">
+        <p>CHOI SOJIN</p>
+        <p>PORTFOLIO<br />VER 6.4</p>
+        <h1>designer <br><span>Publisher</span></h1>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="history" class="content1 clearfix wow fadeIn" data-wow-delay="100ms"
+      style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+      <div class="content1-left">
+        <h2>History</h2>
+      </div>
+
+      <div class="content1-right">
+        <div class="profile">
+          <ul class="clearfix">
+            <li>
+              2007. 08 - 2012. 01 하나투어 : 온라인사업부 대리(주임연구원)
+              팀원<br />
+              2012. 12 - 2014. 12 한국산업은행 : KDBdirect부 주임/계장(연구원)
+              팀원 <br />
+              2015. 01 - 2018. 04 남북관광여행사 : 디자인팀 대리<br />
+              2018. 05 - 2019. 04 로제타스톤코리아 : consumer팀 대리 팀원<br />
+              2019. 05 - 2020. 05 한국낚시방송 온라인사업부 대리 팀원<br />
+              2020. 05 - 2021. 05 비나스코인터내셔널 디자인팀 대리 팀원<br />
+              2022. 10 - 2023. 12 로아스인터내셔널코리아 이커머스 팀장<br />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="publish" class="content2 wow fadeIn" data-wow-delay="100ms"
+      style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+      <div class="content1-left">
+        <h2>Publish</h2>
+      </div>
+
+      <div class="content1-right">
+        <ul>
+          <li>상세페이지</li>
+          <li>이벤트</li>
+          <li>파워포인트</li>
+          <li>UI디자인</li>
+          <li>프로모션</li>
+          <li>사이트</li>
+          <li>브로슈어</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="skills" class="content3 wow fadeIn" data-wow-delay="100ms"
+      style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+      <h2>SKILLS</h2>
+
+      <div class="skill clearfix"></div>
+    </section>
+    <!--end of skills-->
+
+    <hr />
+
+    <section id="design" class="content4 clearfix wow fadeIn" data-wow-delay="100ms"
+      style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+      <div class="content1-left">
+        <h2>Design</h2>
+      </div>
+
+      <div class="content1-right">
+        <div id="menu" class="tab">
+          <div class="menu-links" class="tablinks" id="filter-landing" onclick="openCity(event, 'cont1')">
+            상세페이지
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-event" onclick="openCity(event, 'cont5')">
+            <span id="defaultOpen">이벤트</span>
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-ppt" onclick="openCity(event, 'cont3')">
+            파워포인트
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-ui" onclick="openCity(event, 'cont4')">
+            UI디자인
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-promo" onclick="openCity(event, 'cont6')">
+            프로모션
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-site" onclick="openCity(event, 'cont2')">
+            사이트
+          </div>
+          <div class="menu-links" class="tablinks" id="filter-bro" onclick="openCity(event, 'cont9')">
+            브로슈어
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" style="padding-top: 260px">
+        <div id="gallery-content">
+          <div id="gallery-content-center">
+            <img src="_assets/event1.jpg" class="event" /><img src="_assets/event2.jpg" class="event" /><img
+              src="_assets/event3.jpg" class="event" /><img src="_assets/event4.jpg" class="event" /><img
+              src="_assets/event5.jpg" class="event" /><img src="_assets/event6.jpg" class="event" /><img
+              src="_assets/event7.jpg" class="event" /><img src="_assets/event8.jpg" class="event" /><img
+              src="_assets/event9.jpg" class="event" /><img src="_assets/event10.jpg" class="event" /><img
+              src="_assets/event11.jpg" class="event" /><img src="_assets/event12.jpg" class="event" /><img
+              src="_assets/event13.jpg" class="event" /><img src="_assets/event14.jpg" class="event" /><img
+              src="_assets/event15.jpg" class="event" /><img src="_assets/event16.jpg" class="event" /><img
+              src="_assets/event17.jpg" class="event" /><img src="_assets/promo1.jpg" class="promo" /><img
+              src="_assets/promo2.jpg" class="promo" /><img src="_assets/promo3.jpg" class="promo" /><img
+              src="_assets/promo4.jpg" class="promo" /><img src="_assets/promo5.jpg" class="promo" /><img
+              src="_assets/promo6.jpg" class="promo" /><img src="_assets/promo7.jpg" class="promo" /><img
+              src="_assets/promo8.jpg" class="promo" /><img src="_assets/promo9.jpg" class="promo" /><img
+              src="_assets/promo10.jpg" class="promo" /><img src="_assets/promo11.jpg" class="promo" /><img
+              src="_assets/landing1.jpg" class="landing" /><img src="_assets/landing2.jpg" class="landing" /><img
+              src="_assets/landing3.jpg" class="landing" /><img src="_assets/landing4.jpg" class="landing" /><img
+              src="_assets/landing5.jpg" class="landing" /><img src="_assets/landing6.jpg" class="landing" /><img
+              src="_assets/landing7.jpg" class="landing" /><img src="_assets/landing8.jpg" class="landing" /><img
+              src="_assets/landing9.jpg" class="landing" /><img src="_assets/landing10.jpg" class="landing" /><img
+              src="_assets/landing11.jpg" class="landing" /><img src="_assets/landing13.jpg" class="landing" /><img
+              src="_assets/landing14.jpg" class="landing" /><img src="_assets/landing15.jpg" class="landing" /><img
+              src="_assets/landing16.jpg" class="landing" /><img src="_assets/landing17.jpg" class="landing" /><img
+              src="_assets/proj1.jpg" class="proj" /><img src="_assets/proj2.jpg" class="proj" /><img
+              src="_assets/proj3.jpg" class="proj" /><img src="_assets/proj4.jpg" class="proj" /><img
+              src="_assets/site1.jpg" class="site" /><img src="_assets/site2.jpg" class="site" /><img
+              src="_assets/site3.jpg" class="site" /><img src="_assets/site4.jpg" class="site" /><img
+              src="_assets/site5.jpg" class="site" /><img src="_assets/site6.jpg" class="site" /><img
+              src="_assets/site7.jpg" class="site" /><img src="_assets/site8.jpg" class="site" /><img
+              src="_assets/site9.jpg" class="site" /><img src="_assets/ppt22.jpg" class="ppt" /><img
+              src="_assets/ppt23.jpg" class="ppt" /><img src="_assets/ppt24.jpg" class="ppt" /><img
+              src="_assets/ppt25.jpg" class="ppt" /><img src="_assets/ppt26.jpg" class="ppt" /><img
+              src="_assets/ppt27.jpg" class="ppt" /><img src="_assets/ppt28.jpg" class="ppt" /><img
+              src="_assets/ppt29.jpg" class="ppt" /><img src="_assets/ppt30.jpg" class="ppt" /><img
+              src="_assets/ppt33.jpg" class="ppt" /><img src="_assets/ppt31.jpg" class="ppt" /><img
+              src="_assets/ppt32.jpg" class="ppt" /><img src="_assets/ppt1.jpg" class="ppt" /><img
+              src="_assets/ppt2.jpg" class="ppt" /><img src="_assets/ppt3.jpg" class="ppt" /><img src="_assets/ppt4.jpg"
+              class="ppt" /><img src="_assets/ppt5.jpg" class="ppt" /><img src="_assets/ppt6.jpg" class="ppt" /><img
+              src="_assets/ppt7.jpg" class="ppt" /><img src="_assets/ppt8.jpg" class="ppt" /><img src="_assets/ppt9.jpg"
+              class="ppt" /><img src="_assets/ppt10.jpg" class="ppt" /><img src="_assets/ppt11.jpg" class="ppt" /><img
+              src="_assets/ppt12.jpg" class="ppt" /><img src="_assets/ppt13.jpg" class="ppt" /><img
+              src="_assets/ppt14.jpg" class="ppt" /><img src="_assets/ppt15.jpg" class="ppt" /><img
+              src="_assets/ppt16.jpg" class="ppt" /><img src="_assets/ppt17.jpg" class="ppt" /><img
+              src="_assets/ppt18.jpg" class="ppt" /><img src="_assets/ppt19.jpg" class="ppt" /><img
+              src="_assets/ui7.jpg" class="ui" /><img src="_assets/ui8.jpg" class="ui" /><img src="_assets/ui1.jpg"
+              class="ui" /><img src="_assets/ui2.jpg" class="ui" /><img src="_assets/ui3.jpg" class="ui" /><img
+              src="_assets/ui4.jpg" class="ui" /><img src="_assets/ui5.jpg" class="ui" /><img src="_assets/ui6.jpg"
+              class="ui" /><img src="_assets/bro1.jpg" class="bro" /><img src="_assets/bro2.jpg" class="bro" /><img
+              src="_assets/bro3.jpg" class="bro" /><img src="_assets/bro4.jpg" class="bro" /><img src="_assets/bro5.jpg"
+              class="bro" /><img src="_assets/bro6.jpg" class="bro" /><img src="_assets/bro7.jpg" class="bro" /><img
+              src="_assets/bro8.jpg" class="bro" /><img src="_assets/bro9.jpg" class="bro" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- design pf -->
+
+    <hr />
+
+    <section id="contact" class="content5 wow fadeIn" data-wow-delay="100ms"
+      style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+      <h2>Contact</h2>
+      <div class="contact_img"></div>
+
+      <div class="container">
+        <p>
+          "세련되고 혁신적인 디자인과 최신기술의 조화로<br />
+          <strong>당신의 이야기를 빛내는 웹 경험, 지금 경험해보세요."</strong>
+        </p>
+        <p>연락처 : choisojin@naver.com, 010 4349 0048<br /></p>
+
+        <div class="link clearfix">
+          <a href="file/document.pdf" class="fileOpen" target="_blank">프로필 사이트 기획안 살펴보기</a>
+          <a href="https://github.com/escookiee" class="git" target="_blank">GIT 바로가기</a>
+        </div>
+      </div>
+    </section>
+    <!--end of contact-->
+
+    <hr />
+
+    <footer>
+      <address>
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로
+        제작되었습니다.<br />
+        © 2023 Choi, So-Jin. All Rights Reserved.
+      </address>
+    </footer>
+  </div>
+</body>
+
+</html>
