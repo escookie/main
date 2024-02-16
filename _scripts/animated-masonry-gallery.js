@@ -33,7 +33,7 @@ function check_button(){
 		$("#filter-promo");
 		}
 	if(button==7){
-		$("#filter-banner");
+		$("#filter-coding");
 		}
 	if(button==8){
 		$("#filter-proj");
@@ -51,7 +51,7 @@ function check_button(){
 	$("#filter-ui").click(function() {  $container.isotope({ filter: '.ui' }); button = 4; check_button();  });
 	$("#filter-event").click(function() {  $container.isotope({ filter: '.event' }); button = 5; check_button();  });
 	$("#filter-promo").click(function() {  $container.isotope({ filter: '.promo' }); button = 6; check_button();  });
-	$("#filter-banner").click(function() {  $container.isotope({ filter: '.banner' }); button = 7; check_button();  });
+	$("#filter-coding").click(function() {  $container.isotope({ filter: '.coding' }); button = 7; check_button();  });
 	$("#filter-proj").click(function() {  $container.isotope({ filter: '.proj' }); button = 8; check_button();  });
 	$("#filter-bro").click(function() {  $container.isotope({ filter: '.bro' }); button = 9; check_button();  });
 	
