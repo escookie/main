@@ -18,7 +18,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>p{position:absolute; top:60px; font-weight:300; letter-spacing:2px;}
 #home>.container>p:nth-child(1){top:26px; left:60px;}
 #home>.container>p:nth-child(2){right:60px; transform:rotate(90deg);font-size: clamp(0.8rem, 1.1vw, 1.1rem);}
-#home>.container>h1{padding-top: 30%; padding-right: 10%; text-align: right; font-weight:700; font-size: clamp(3rem, 10vw, 10rem); color:#7576a0; line-height:0.9; letter-spacing:-3px;}
+#home>.container>h1{padding-top: 32%; padding-right: 10%; text-align: right; font-weight:700; font-size: clamp(3rem, 10vw, 8rem); color:#7576a0; line-height:0.9; letter-spacing:-3px;}
 #home>.container>h1 span{color:#b9b9b9}
 
 /* section - history */
@@ -102,10 +102,10 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #contact>.container>p{font-size:20px; line-height:1.8; letter-spacing:1px;}
 #contact>.container>p+p:before{content:'/'; display:block; padding:20px 0; font-weight:300; font-size:30px; color:#7576a0; opacity:0.3;}
 #contact>.container>p+p{margin-bottom:20px; font-size:16px;}
-#contact>.container>.link{width:394px; margin:0 auto;}
+#contact>.container>.link{width:394px; display: flex; justify-content: center;}
 #contact>.container>.link>a{display:block; float:left; height:40px; line-height:40px; color:#7576a0; border:1px solid #7576a0; border-radius:5px; transition:all 0.4s;}
 #contact>.container>.link>a.fileOpen{width:240px; margin-right:10px;}
-#contact>.container>.link>a.git{width:140px;}
+#contact>.container>.link>a.git{width:240px;}
 #contact>.container>.link>a:hover,#contact>.container>.link>a:focus{color:#fff; background-color:#7576a0;}
 
 /* footer */
