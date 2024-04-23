@@ -7,13 +7,12 @@ body{font-family:'Noto Sans KR',sans-serif; color:#2b2b2b;background-image:url(.
 header{position:fixed; left:0; bottom:0; width:100%; height:60px; z-index:100; background-color:rgba(255,255,255,0.5);}
 header.active{top:0;}
 header>.container>nav{position:absolute; left:50%; top:0; margin-left:-600px; width:100%; height:60px;}
-
 header>.container>nav>.gnb>li{float:left; width:200px;}
 header>.container>nav>.gnb>li>a{display:block; height:60px; line-height:60px; font-size:20px; font-weight:700; text-align:center; transition:all 0.4s;}
 header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,header>.container>nav>.gnb>li.on>a{color:#7576a0; }
 
 /* section - home */
-#home{width:100%; height:100%; }
+#home{width:100%}
 #home>.container{width:100%}
 #home>.container>p{position:absolute; top:60px; font-weight:300; letter-spacing:2px;}
 #home>.container>p:nth-child(1){top:26px; left:60px;}
@@ -25,7 +24,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #history{display: flex; margin-top: 10%;}
 @media only screen and (max-width: 600px) { 
     #history{display: block; margin-top: 10%}
-    #history>.history-left>p{margin-left: 15%;}
+    #history>.history-left>p{padding-left: 15%;}
 }
 #history>.history-left{width: 30%; text-align: right;}
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
@@ -44,15 +43,12 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 /* section - publish */
 #publish{position:relative; width:100%; padding-top: 5%}
-
 #publish>.title>h2{text-align: right; padding-right: 15%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
-
 #publish>.content2 {display: flex; justify-content: center}
 @media screen and (max-width:600px) {
     #publish>.title>h2{padding-right: 0; padding-bottom: 2%; text-align: center; }
     #publish>.content2 {display: block; padding-left: 13%;}    
 }
-
 #publish>.content2>.box {width: 330px; margin: 10px}
 #publish>.content2>.box>li:first-of-type{font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
 #publish>.content2>.box>li:nth-of-type(2) {font-size: 14px; color: #6e6e73;}
@@ -60,14 +56,15 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - skills */
-#skills{display: flex; justify-content: left; align-items: center; width:100%; padding-left: 20%; padding-top: 10%;}
-#skills>h2{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-top: 0%; padding-bottom: 10%; padding-right: 3%;}
+#skills{display: flex; justify-content: left; align-items: center; width:100%;  padding-top: 10%;}
+#skills>h2{padding-left: 20%;font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-top: 0%; padding-bottom: 10%; padding-right: 3%;}
 #skills>.skill{ width:595px; display: flex; flex-wrap: wrap;}
 @media only screen and (max-width: 600px) { 
+    #skills>h2{padding-left: 0}
     #skills{display: block; margin-top: 10%;padding-left: 5%; text-align: center;}
     #skills>.skill{ width:100%; display: grid; grid-template-columns: 30% 30% 30%}
 }
-#skills>.skill>div{margin: 0 10px;text-align: center;padding-bottom: 5%}
+#skills>.skill>div{padding: 0 10px;text-align: center;padding-bottom: 5%}
 
 
 /* section - design */
@@ -79,7 +76,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 .menu-links {height: 40px; padding: 3px 15px 0 15px; font-size: clamp(1.2rem, 3vw, 1rem); font-weight: bold; transition: all 0.5s}
 .menu-links:hover { background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; }
 
-#gallery-content{padding-top: 5%;}
+#gallery-content{padding-top: 5%}
 #gallery-content-center img {width: 300px; transition: all 0.5s; margin-left: 12px}
 #gallery-content-center a:hover { opacity: 80%; transition: all 0.5s }
 
@@ -96,7 +93,6 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 /* section - contact */
 #contact{position:relative; overflow:hidden; width:100%; height:860px;}
 #contact>h2{position:absolute; right:50%; top:150px; margin-right:-450px; margin-bottom:20px; font-size:70px; font-weight:500; color:#7576a0; letter-spacing:1px; text-align:center;}
-#contact>.contact_img{position:absolute; right:50%; top:300px; margin-right:-985px; width:800px; height:375px; background-image:url(../images/contact_banner.jpg);}
 
 #contact>.container{position:absolute; top:50%; left:50%; margin-left:-400px; margin-top:-90px; text-align:center;}
 #contact>.container>p{font-size:20px; line-height:1.8; letter-spacing:1px;}
