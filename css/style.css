@@ -52,6 +52,10 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #publish>.content2>.box {width: 330px; margin: 10px}
 #publish>.content2>.box>li:first-of-type{font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
 #publish>.content2>.box>li:nth-of-type(2) {font-size: 14px; color: #6e6e73;}
+#publish>.content2>.box>a>img{border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease;}
+#publish>.content2>.box>a>img:hover{border: 1px solid #b4b4b4; transform: scale(1.004)}
+#publish>.content2>.box>.box-name {font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
+#publish>.content2>.box>.box-name:hover {text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8);}
 
 
 
@@ -59,6 +63,8 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #skills{display: flex; justify-content: left; align-items: center; width:100%;  padding-top: 10%;}
 #skills>h2{padding-left: 20%;font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-top: 0%; padding-bottom: 10%; padding-right: 3%;}
 #skills>.skill{ width:595px; display: flex; flex-wrap: wrap;}
+#skills>.skill>div{transition:transform 0.1s ease}
+#skills>.skill>div:hover{transform: scale(1.02)}
 @media only screen and (max-width: 600px) { 
     #skills>h2{padding-left: 0}
     #skills{display: block; margin-top: 10%;padding-left: 5%; text-align: center;}
