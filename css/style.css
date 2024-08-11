@@ -30,8 +30,8 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 
 #history>.history-right{width: 70%; padding-top: 2%; padding-left: 5%;}
-#history>.history-right>.profile{width:650px; height:280px;}
-#history>.history-right>.profile>ul{position:relative; width:650px; height:280px;}
+#history>.history-right>.profile{height:280px;}
+#history>.history-right>.profile>ul{position:relative; height:280px;}
 #history>.history-right>.profile>ul>li{position:absolute; left:0; top:0; width:650px; height:280px; font-size: clamp(1rem, 1.45vw, 1.2rem); line-height:2;}
 
 
