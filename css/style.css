@@ -17,12 +17,12 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>p{position:absolute; top:60px; font-weight:300; letter-spacing:2px;}
 #home>.container>p:nth-child(1){top:26px; left:60px;}
 #home>.container>p:nth-child(2){right:60px; transform:rotate(90deg);font-size: clamp(0.8rem, 1.1vw, 1.1rem);}
-#home>.container>h1{padding-top: 32%; padding-right: 10%; text-align: right; font-weight:700; font-size: clamp(3rem, 10vw, 8rem); color:#7576a0; line-height:0.9; letter-spacing:-3px;}
+#home>.container>h1{padding-top: 30%; padding-right: 10%; text-align: right; font-weight:700; font-size: clamp(3rem, 10vw, 8rem); color:#7576a0; line-height:0.9; letter-spacing:-3px;}
 #home>.container>h1 span{color:#b9b9b9}
 
 /* section - history */
-#history{display: flex; margin-top: 10%;}
-@media only screen and (max-width: 600px) { 
+#history{display: flex; margin-top: 5%;}
+@media only screen and (max-width: 600px) {
     #history{display: block; margin-top: 10%}
     #history>.history-left>p{padding-left: 15%;}
 }
@@ -42,21 +42,20 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - publish */
-#publish{position:relative; width:100%; padding-top: 5%}
+#publish{position:relative; width:100%; padding-top: 4%}
 #publish>.title>h2{text-align: right; padding-right: 15%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 #publish>.content2 {display: flex; justify-content: center}
 @media screen and (max-width:600px) {
     #publish>.title>h2{padding-right: 0; padding-bottom: 2%; text-align: center; }
     #publish>.content2 {display: block; padding-left: 13%;}    
 }
-#publish>.content2>.box {width: 330px; margin: 10px}
+#publish>.content2>.box {width: 330px; margin: 10px;}
 #publish>.content2>.box>li:first-of-type{font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
 #publish>.content2>.box>li:nth-of-type(2) {font-size: 14px; color: #6e6e73;}
 #publish>.content2>.box>a>img{border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease;}
 #publish>.content2>.box>a>img:hover{border: 1px solid #b4b4b4; transform: scale(1.004)}
 #publish>.content2>.box>.box-name {font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
 #publish>.content2>.box>.box-name:hover {text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8);}
-
 
 
 /* section - skills */
