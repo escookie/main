@@ -21,21 +21,21 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>h1 span{color:#b9b9b9}
 
 /* section - history */
-#history{display: flex; margin-top: 5%;}
+#history{display: flex; margin-top: 5%}
 @media only screen and (max-width: 600px) {
     #history{display: block; margin-top: 10%}
     #history>.history-left>p{padding-left: 15%;}
 }
-#history>.history-left{width: 30%; text-align: right;}
+#history>.history-left{text-align: right;}
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 
-#history>.history-right{width: 70%; padding-top: 2%; padding-left: 5%;}
+#history>.history-right{width: 100%; padding-top: 2%; padding-left: 5%;;}
 #history>.history-right>.profile{height:280px;}
 #history>.history-right>.profile>ul{position:relative; height:280px;}
-#history>.history-right>.profile>ul>li{position:absolute; left:0; top:0; width:650px; height:280px; font-size: clamp(1rem, 1.45vw, 1.2rem); line-height:2;}
+#history>.history-right>.profile>ul>li{position:absolute; left:0; top:0; height:280px; font-size: clamp(1rem, 1.45vw, 1.2rem); line-height:2;}
 
 
-#history>.history-right>.tag{position:absolute; bottom:0px; left:0; width:650px; height:100px;} 
+#history>.history-right>.tag{position:absolute; bottom:0px; left:0; height:100px;} 
 #history>.history-right>.tag>ul>li{float:left; height:40px; line-height:26px; margin-left:15px; margin-bottom:10px;}
 
 
@@ -46,8 +46,9 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #publish>.title>h2{text-align: right; padding-right: 15%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 #publish>.content2 {display: flex; justify-content: center}
 @media screen and (max-width:600px) {
-    #publish>.title>h2{padding-right: 0; padding-bottom: 2%; text-align: center; }
-    #publish>.content2 {display: block; padding-left: 13%;}    
+    #publish>.title>h2{padding: 0; text-align: center}
+    #publish>.content2 {display: block; text-align: center;}
+    #publish>.content2 .box{display: inline-block; margin: 10px auto;}    
 }
 #publish>.content2>.box {width: 330px; margin: 10px;}
 #publish>.content2>.box>li:first-of-type{font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700;}
