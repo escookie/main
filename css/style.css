@@ -19,6 +19,20 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>p:nth-child(2){right:60px; transform:rotate(90deg);font-size: clamp(0.8rem, 1.1vw, 1.1rem);}
 #home>.container>h1{padding-top: 30%; padding-right: 10%; text-align: right; font-weight:700; font-size: clamp(3rem, 10vw, 8rem); color:#7576a0; line-height:0.9; letter-spacing:-3px;}
 #home>.container>h1 span{color:#b9b9b9}
+#home>.container>h2 {display: none;}
+
+@media only screen and (max-width: 600px) {
+    /* #home>.container>h1 {padding-top: 20%; padding-right: 0; text-align: center; line-height: 1.2;} */    
+    #home>.container {text-align: center;}
+    #home>.container>h1 {display: none;}
+    #home>.container>h2 {display: inline-block;color:#7576a0; padding: 30% 0 20% 0;font-size: clamp(3rem, 10vw, 8rem)}
+    #home>.container>h2 span{color:#b9b9b9}
+
+    #home>.container>p{top:26px;}
+    #home>.container>p:nth-child(1){left:26px}
+    #home>.container>p:nth-child(2){right:26px; transform:rotate(0deg);}
+    #home>.container>p>br {display: none;}
+}
 
 /* section - history */
 #history{display: flex; margin-top: 5%}
