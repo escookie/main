@@ -22,10 +22,10 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>h2 {display: none;}
 
 @media only screen and (max-width: 600px) {
-    /* #home>.container>h1 {padding-top: 20%; padding-right: 0; text-align: center; line-height: 1.2;} */    
+     
     #home>.container {text-align: center;}
     #home>.container>h1 {display: none;}
-    #home>.container>h2 {display: inline-block;color:#7576a0; padding: 30% 0 20% 0;font-size: clamp(3rem, 10vw, 8rem)}
+    #home>.container>h2 {display: inline-block;color:#7576a0; padding: 30% 0 20% 0;font-size: clamp(3rem, 10vw, 8rem);}
     #home>.container>h2 span{color:#b9b9b9}
 
     #home>.container>p{top:26px;}
@@ -36,22 +36,22 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 /* section - history */
 #history{display: flex; margin-top: 5%}
-@media only screen and (max-width: 600px) {
-    #history{display: block; margin-top: 10%}
-    #history>.history-left>p{padding-left: 15%;}
-}
 #history>.history-left{text-align: right;}
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 
 #history>.history-right{width: 100%; padding-top: 2%; padding-left: 5%;;}
 #history>.history-right>.profile{height:280px;}
 #history>.history-right>.profile>ul{position:relative; height:280px;}
-#history>.history-right>.profile>ul>li{position:absolute; left:0; top:0; height:280px; font-size: clamp(1rem, 1.45vw, 1.2rem); line-height:2;}
+#history>.history-right>.profile>ul>li{left:0; top:0; height:280px; font-size: clamp(1rem, 1.45vw, 1.2rem); line-height:2;}
+#history>.history-right>.profile>ul>li:nth-child(2){display: none;}
 
 
-#history>.history-right>.tag{position:absolute; bottom:0px; left:0; height:100px;} 
-#history>.history-right>.tag>ul>li{float:left; height:40px; line-height:26px; margin-left:15px; margin-bottom:10px;}
-
+@media only screen and (max-width: 600px) {
+    #history{display: block;}
+    #history>.history-left{padding-right: 4%; padding-bottom: 2%;}
+    #history>.history-right>.profile>ul>li:nth-child(1){display: none}
+    #history>.history-right>.profile>ul>li:nth-child(2){display: inline-block}
+}
 
 
 
