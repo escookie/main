@@ -36,7 +36,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 /* section - history */
 #history{display: flex; margin-top: 5%}
-#history>.history-left{text-align: right;}
+#history>.history-left{text-align: right; padding-left: 13%;}
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 
 #history>.history-right{width: 100%; padding-top: 2%; padding-left: 5%;;}
@@ -94,35 +94,47 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 #menu{display: flex; line-height: 35px; font-family: 'Source Sans Pro', sans-serif}
 .menu-links {height: 40px; padding: 3px 15px 0 15px; font-size: clamp(1.2rem, 3vw, 1rem); font-weight: bold; transition: all 0.5s}
-.menu-links:hover { background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; }
+.menu-links:hover {background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; }
 
 #gallery-content{padding-top: 5%}
 #gallery-content-center img {width: 300px; transition: all 0.5s; margin-left: 12px}
 #gallery-content-center a:hover { opacity: 80%; transition: all 0.5s }
 
 @media screen and (max-width:600px) {
-    #design{padding-top: 10%}
+    #design{padding: 20% 0 0 5%;}
     #design>.design-text{display:block; text-align: center;}
-    #design>.design-text>.tab{display:grid; grid-template-columns: 33% 33% 33%; padding-top: 3%;}
+    #design>.design-text h2{padding-bottom: 5%;}
+    
+    #design>.design-text>.tab{display:grid; grid-template-columns: 50% 50%; padding-top: 3%;}
     #menu{display: block;}
-    #gallery-content-center img {padding-left: 15%;}
+    #gallery-content-center img {padding-left: 5%; margin: 0;}
+    
     
 }
 
 
 /* section - contact */
-#contact{position:relative; overflow:hidden; width:100%; height:860px;}
-#contact>h2{position:absolute; right:50%; top:150px; margin-right:-450px; margin-bottom:20px; font-size:70px; font-weight:500; color:#7576a0; letter-spacing:1px; text-align:center;}
+#contact{position:relative; overflow:hidden; height:500px; padding-top: 5%;}
+#contact>h2{top:150px;font-size: clamp(2.5rem, 4vw, 5rem) ; font-weight:500; color:#7576a0; text-align:center;}
 
-#contact>.container{position:absolute; top:50%; left:50%; margin-left:-400px; margin-top:-90px; text-align:center;}
-#contact>.container>p{font-size:20px; line-height:1.8; letter-spacing:1px;}
+#contact>.container{text-align:center; padding-top: 3%;}
+#contact>.container>p{font-size:20px; line-height:1.8}
 #contact>.container>p+p:before{content:'/'; display:block; padding:20px 0; font-weight:300; font-size:30px; color:#7576a0; opacity:0.3;}
-#contact>.container>p+p{margin-bottom:20px; font-size:16px;}
-#contact>.container>.link{width:394px; display: flex; justify-content: center;}
-#contact>.container>.link>a{display:block; float:left; height:40px; line-height:40px; color:#7576a0; border:1px solid #7576a0; border-radius:5px; transition:all 0.4s;}
-#contact>.container>.link>a.fileOpen{width:240px; margin-right:10px;}
+#contact>.container>p+p{margin-bottom:2%; font-size:16px;}
+
+#contact>.container>p+p br{display: none;}
+
+#contact>.container>.link{width:394px; display: flex; justify-content: center; margin: 0 auto}
+#contact>.container>.link>a{height:40px; line-height:40px; color:#7576a0; border:1px solid #7576a0; border-radius:5px; transition:all 0.4s;}
+
 #contact>.container>.link>a.git{width:240px;}
 #contact>.container>.link>a:hover,#contact>.container>.link>a:focus{color:#fff; background-color:#7576a0;}
+
+@media screen and (max-width:600px) {
+    #contact>h2{padding-top: 10%;}
+    #contact>.container>p br{display: inline-block;}
+}
+
 
 /* footer */
 footer{width:100%; height:100px; background-color:#7576a0;}
