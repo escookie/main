@@ -12,7 +12,7 @@ header>.container>nav>.gnb>li>a{display:block; height:60px; line-height:60px; fo
 header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,header>.container>nav>.gnb>li.on>a{color:#7576a0; }
 
 /* section - home */
-#home{width:100%}
+#home{width:100%;}
 #home>.container{width:100%}
 #home>.container>p{position:absolute; top:60px; font-weight:300; letter-spacing:2px;}
 #home>.container>p:nth-child(1){top:26px; left:60px;}
@@ -35,7 +35,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 }
 
 /* section - history */
-#history{display: flex; margin-top: 3%}
+#history{display: flex; margin-top: 8%}
 #history>.history-left{text-align: right; padding-left: 13%;}
 #history>.history-left>p{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 
@@ -56,7 +56,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - publish */
-#publish{position:relative; width:100%; padding-top: 4%}
+#publish{position:relative; width:100%; padding-top: 8%}
 #publish>.title>h2{text-align: right; padding-right: 20%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px;}
 #publish>.content2 {display: flex; justify-content: center}
 @media screen and (max-width:1500px) {
