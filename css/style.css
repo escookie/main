@@ -80,7 +80,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - skills */
-#skills{display: flex; justify-content: left; align-items: center; width:100%;  padding-top: 10%;}
+#skills{display: flex; justify-content: left; align-items: center; width:100%;  padding-top: 8%;}
 #skills>h2{padding-left: 20%;font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-top: 0%; padding-bottom: 10%; padding-right: 3%;}
 #skills>.skill{ width:595px; display: flex; flex-wrap: wrap;}
 #skills>.skill>div{transition:transform 0.1s ease}
@@ -94,7 +94,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - design */
-#design{width:100%; padding-top: 5%; }
+#design{width:100%; padding-top: 8%; }
 #design>.design-text{display:flex; flex-direction: row-reverse; padding-right: 10%; align-items: baseline; }
 #design>.design-text>h2{font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-left: 1%;}
 
