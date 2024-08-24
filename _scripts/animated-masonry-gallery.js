@@ -1,5 +1,18 @@
 $(window).load(function () {
 
+	var backgroundText = document.getElementById('backgroundText');
+    if (backgroundText) {
+        let scrolled = false;
+
+        window.addEventListener('scroll', function() {
+            if (!scrolled) {
+                backgroundText.style.opacity = '0';
+                scrolled = true;
+            }
+        });
+    }
+
+
 var size = 1;
 var button = 1;
 var $container = $('#gallery-content-center');
