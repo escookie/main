@@ -1,18 +1,27 @@
 $(window).load(function () {
 
-	var backgroundText = document.getElementById('backgroundText');
-    if (backgroundText) {
-        let scrolled = false;
+var backgroundText = document.getElementById('backgroundText');
+if (backgroundText) {
+	let scrolled = false;
 
-        window.addEventListener('scroll', function() {
-            if (scrollY > 0) {
-                backgroundText.style.opacity = '0';
-                scrolled = true;
-            } else {
-				backgroundText.style.opacity = '1';
-			}
-        });
+	window.addEventListener('scroll', function() {
+		if (scrollY > 0) {
+			backgroundText.style.opacity = '0';
+			scrolled = true;
+		} else {
+			backgroundText.style.opacity = '1';
+		}
+	});
+}
+
+window.addEventListener('scroll', function() {
+    var backgroundText1 = document.getElementById('backgroundText1');
+    if (window.scrollY > 180) {
+        backgroundText1.style.opacity = '1'; // 텍스트가 보이도록 설정
+    } else {
+        backgroundText1.style.opacity = '0'; // 텍스트가 보이지 않도록 설정
     }
+});
 
 
 var size = 1;
