@@ -5,10 +5,12 @@ $(window).load(function () {
         let scrolled = false;
 
         window.addEventListener('scroll', function() {
-            if (!scrolled) {
+            if (scrollY > 0) {
                 backgroundText.style.opacity = '0';
                 scrolled = true;
-            }
+            } else {
+				backgroundText.style.opacity = '1';
+			}
         });
     }
 
