@@ -65,7 +65,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
  }
 
 /* section - history */
-#history { display: flex; margin-top: 8% } 
+#history { display: flex; margin-top: 4% } 
 #history>.history-left { text-align: right; padding-left: 13%; } 
 #history>.history-left>p { font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; } 
 
@@ -86,7 +86,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - publish */
-#publish { position:relative; width:100%; padding-top: 8% } 
+#publish { position:relative; width:100%; padding-top: 4% } 
 #publish>.title>h2 { text-align: right; padding-right: 20%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; } 
 #publish>.content2 { display: flex; justify-content: center } 
 @media screen and (max-width:1500px){
@@ -124,7 +124,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - design */
-#design { width:100%; padding-top: 8%; z-index: 10;} 
+#design { width:100%; padding-top: 4%; z-index: 10;} 
 #design>.design-text { display:flex; flex-direction: row-reverse; padding-right: 10%; align-items: baseline; } 
 #design>.design-text>h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-left: 1%; } 
 
