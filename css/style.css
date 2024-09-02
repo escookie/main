@@ -1,38 +1,33 @@
-@charset "utf-8"; @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap');
-body { font-family:'Noto Sans KR',sans-serif; color:#2b2b2b; background-image:url(../images/background.jpg); background-repeat:no-repeat; background-size:cover; margin: 0;  } 
+@charset "utf-8"; @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap');body { font-family:'Noto Sans KR',sans-serif; color:#2b2b2b; background-image:url(../images/background.jpg); background-repeat:no-repeat; background-size:cover; margin: 0; } 
 
 /* home - letter */
-.background-text { position: fixed; top: 20vw; left: 0; transform: translateX(-40%) translateY(-50%); white-space: nowrap; font-size: clamp(12rem, 15vw, 15rem); color: rgba(190, 190, 190, 0.1); 
- font-family: Arial, sans-serif; animation: moveText 40s linear infinite; font-weight: 700; z-index: 1; transition: opacity 1s ease;pointer-events: none;} 
+.background-text { position: fixed; top: 20vw; left: 0; transform: translateX(-40%) translateY(-50%); white-space: nowrap; font-size: clamp(12rem, 15vw, 15rem); color: rgba(190, 190, 190, 0.1); font-family: Arial, sans-serif; animation: moveText 40s linear infinite; font-weight: 700; z-index: 1; transition: opacity 1s ease; pointer-events: none; } 
 
-@media screen and (max-width:600px) {
-    .background-text{display: none;}
-}
+@media screen and (max-width:600px){
+ .background-text { display: none; } 
+ }
 
 @keyframes moveText { 
  from { left: 100%; } 
  to { left: -100%; } 
  }
 
- p, h1, h2 { position: relative; z-index: 2; }
+ p, h1, h2 { position: relative; z-index: 2; } 
 
- .background-text1 {
-    position: fixed; /* 화면에 고정 */
-    top: 40%; /* 세로 가운데 정렬 */
-    left: 20%; /* 가로 가운데 정렬 */
-    z-index: -1; /* 가장 뒷 레이어에 배치 */
-    font-size: clamp(3rem, 10vw, 10rem); /* 텍스트 크기 조절 */
-    color: transparent; /* 텍스트 자체는 투명하게 설정 */
-    -webkit-text-stroke: 2px rgba(146, 152, 219, 0.2); /* 글자 테두리 색상 및 두께 설정 */
-    pointer-events: none; /* 이 텍스트 위에서 클릭 이벤트를 막음 */
-    opacity: 0; /* 처음에는 보이지 않도록 설정 */
-    transition: opacity 0.5s ease-in-out; /* 서서히 나타나도록 전환 효과 설정 */
-    font-weight: 700;
-    line-height: 100%;
-}
-@media screen and (max-width:600px) {
-    .background-text1{left: 3%;}
-}
+ .background-text1 { position: fixed; /* 화면에 고정 */
+ top: 40%; /* 세로 가운데 정렬 */
+ left: 20%; /* 가로 가운데 정렬 */
+ z-index: -1; /* 가장 뒷 레이어에 배치 */
+ font-size: clamp(3rem, 10vw, 10rem); /* 텍스트 크기 조절 */
+ color: transparent; /* 텍스트 자체는 투명하게 설정 */
+ -webkit-text-stroke: 2px rgba(146, 152, 219, 0.2); /* 글자 테두리 색상 및 두께 설정 */
+ pointer-events: none; /* 이 텍스트 위에서 클릭 이벤트를 막음 */
+ opacity: 0; /* 처음에는 보이지 않도록 설정 */
+ transition: opacity 0.5s ease-in-out; /* 서서히 나타나도록 전환 효과 설정 */
+ font-weight: 700; line-height: 100%; } 
+@media screen and (max-width:600px){
+ .background-text1 { left: 3%; } 
+ }
 
 /* header */
 header { position:fixed; left:0; bottom:0; width:100%; height:60px; z-index:100; background-color:rgba(255,255,255,0.5); } 
@@ -52,7 +47,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #home>.container>h1 span { color:rgba(199, 199, 199, 0.7) } 
 #home>.container>h2 { display: none; } 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 680px){
  #home>.container { text-align: center; } 
  #home>.container>h1 { display: none; } 
  #home>.container>h2 { display: inline-block; color:#8392c0; padding: 30% 0 20% 0; font-size: clamp(3rem, 11vw, 8rem); line-height: 130%; letter-spacing: -1px; } 
@@ -76,7 +71,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #history>.history-right>.profile>ul>li:nth-child(2) { display: none; } 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 680px){
  #history { display: block; padding-top: 5%; } 
  #history>.history-left { padding-bottom: 2%; text-align: center; padding-left: 0%; } 
  #history>.history-right>.profile>ul>li:nth-child(1) { display: none } 
@@ -86,27 +81,37 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - publish */
-#publish { position:relative; width:100%; padding-top: 4% } 
-#publish>.title>h2 { text-align: right; padding-right: 20%; font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; } 
-#publish>.content2 { display: flex; justify-content: center } 
-@media screen and (max-width:1500px){
- #publish>.title>h2 { padding-right: 10%; } 
- }
-@media screen and (max-width:1200px){
- #publish>.title>h2 { padding-right: 8%; } 
- }
-@media screen and (max-width:600px){
- #publish>.title>h2 { padding: 0; text-align: center } 
- #publish>.content2 { display: block; text-align: center; } 
- #publish>.content2 .box { display: inline-block; margin: 10px auto; } 
- }
-#publish>.content2>.box { width: 330px; margin: 10px; } 
-#publish>.content2>.box>li:first-of-type { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
-#publish>.content2>.box>li:nth-of-type(2) { font-size: 14px; color: #6e6e73; } 
-#publish>.content2>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; } 
-#publish>.content2>.box>a>img:hover { border: 1px solid #b4b4b4; transform: scale(1.004) } 
-#publish>.content2>.box>.box-name { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
-#publish>.content2>.box>.box-name:hover { text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8); } 
+
+#publish>.title>h2 {font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-left: 180%;} 
+#publish>.content2>div>.box { width: 330px; margin: 10px; } 
+#publish>.content2>div>.box>li:first-of-type { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
+#publish>.content2>div>.box>li:nth-of-type(2) { font-size: 14px; color: #6e6e73; } 
+#publish>.content2>div>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; } 
+#publish>.content2>div>.box>a>img:hover { border: 1px solid #b4b4b4; transform: scale(1.004) } 
+#publish>.content2>div>.box>.box-name { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
+#publish>.content2>div>.box>.box-name:hover { text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8); } 
+@media screen and (max-width:860px) {
+    #publish>.title>h2 {padding: 0;} 
+}
+
+/* slide */
+#publish { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 4%;}
+#publish>.content2 { display: flex; overflow: hidden; width: 73%;}/*overflow width*/
+
+
+#publish>.content2>div:nth-child(1){position: absolute; left: 10vw;padding-top: 14vh;}
+#publish>.content2>div:nth-child(2){display: flex; justify-content: center; }  
+#publish>.content2>div:nth-child(3){position: absolute; right: 10vw;padding-top: 14vh;}
+@media screen and (max-width:1500px) {
+    #publish>.content2>div:nth-child(1){left: 8vw}
+    #publish>.content2>div:nth-child(3){right: 8vw;}
+}
+@media screen and (max-width:1000px) {
+    #publish>.content2>div:nth-child(1){left: 4vw}
+    #publish>.content2>div:nth-child(3){right: 4vw;}
+}
+
+
 
 
 /* section - skills */
@@ -115,7 +120,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #skills>.skill { width:595px; display: flex; flex-wrap: wrap; } 
 #skills>.skill>div { transition:transform 0.1s ease } 
 #skills>.skill>div:hover { transform: scale(1.02) } 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 680px){
  #skills>h2 { padding-left: 0 } 
  #skills { display: block; margin-top: 10%; padding-left: 5%; text-align: center; } 
  #skills>.skill { width:100%; display: grid; grid-template-columns: 30% 30% 30% } 
@@ -124,7 +129,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - design */
-#design { width:100%; padding-top: 4%; z-index: 10;} 
+#design { width:100%; padding-top: 4%; z-index: 10; } 
 #design>.design-text { display:flex; flex-direction: row-reverse; padding-right: 10%; align-items: baseline; } 
 #design>.design-text>h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-left: 1%; } 
 
