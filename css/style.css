@@ -71,9 +71,10 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #history>.history-right>.profile>ul>li:nth-child(2) { display: none; } 
 
 
-@media only screen and (max-width: 680px){
- #history { display: block; padding-top: 5%; } 
- #history>.history-left { padding-bottom: 2%; text-align: center; padding-left: 0%; } 
+@media only screen and (max-width: 800px){
+ #history { display: block; } 
+ #history>.history-left { padding-bottom: 3%; text-align: center; padding-left: 0%; }
+ #history>.history-right {padding-left: 50%; transform: translateX(-22%);}
  #history>.history-right>.profile>ul>li:nth-child(1) { display: none } 
  #history>.history-right>.profile>ul>li:nth-child(2) { display: inline-block } 
  }
@@ -109,6 +110,18 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 @media screen and (max-width:1000px) {
     #publish>.content2>div:nth-child(1){left: 4vw}
     #publish>.content2>div:nth-child(3){right: 4vw;}
+}
+@media screen and (max-width:600px) {
+    .arrow{display: none;}
+    .overflow{display: block;width: 100%;}
+    #publish>.content2 { 
+        display: block; /* 슬라이드 레이아웃을 비활성화하고 블록 레이아웃 사용 */
+    }
+    #publish>.content2>.overflow { 
+        display: flex; 
+        flex-direction: column; /* 세로로 배치 */
+        align-items: center; /* 가운데 정렬 */
+    }
 }
 
 
@@ -148,7 +161,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
  
  #design>.design-text>.tab { display:grid; grid-template-columns: 50% 50%; padding-top: 3%; } 
  #menu { display: block; } 
- #gallery-content-center img { padding-left: 5%; margin: 0; } 
+ #gallery-content-center img { padding-left: 5%; margin: 0; width: 100px;} 
  }
 
 
