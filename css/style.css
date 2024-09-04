@@ -150,17 +150,18 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 .menu-links { height: 40px; padding: 3px 15px 0 15px; font-size: clamp(1.2rem, 3vw, 1rem); font-weight: bold; transition: all 0.5s } 
 .menu-links:hover { background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; } 
 
-#gallery-content { padding-top: 5%;}
-#gallery-content-center img { width: 300px; transition: all 0.5s; margin-left: 12px } 
+#gallery-content { padding-top: 5%;padding-left: 3%;}/*이미지 트레이 padding left*/
+#gallery-content-center img { width: 300px; transition: all 0.5s; margin-left: 12px } /*이미지 사이 간격*/
 #gallery-content-center a:hover { opacity: 80%; transition: all 0.5s } 
 
 @media screen and (max-width:600px){
  #design { padding-top: 20%; } 
- #design>.design-text { display:block; text-align: center; } 
+ #design>.design-text { display:block; text-align: center; padding-right: 0;} 
  #design>.design-text h2 { padding-bottom: 5%; } 
  
  #design>.design-text>.tab { display:grid; grid-template-columns: 50% 50%; padding-top: 3%; } 
- #menu { display: block; } 
+ #menu { display: block; }
+ #gallery-content{padding-left: 1%;}
  #gallery-content-center img {width: 100px;} 
  }
 
