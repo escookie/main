@@ -123,6 +123,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
         align-items: center; /* 가운데 정렬 */
     }
 }
+.arrow img:hover{cursor: pointer;}
 
 
 
