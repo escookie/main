@@ -150,11 +150,11 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 /* section - design */
 #design { width:100%; padding-top: 4%; z-index: 10; } 
-#design>.design-text { display:flex; flex-direction: row-reverse; padding-right: 10%; align-items: baseline; } 
+#design>.design-text { display:flex; flex-direction: row-reverse; padding-right: 10%; align-items: baseline; flex-wrap: nowrap;} 
 #design>.design-text>h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-left: 1%; } 
 
 #menu { display: flex; line-height: 35px; font-family: 'Source Sans Pro', sans-serif } 
-.menu-links { height: 40px; padding: 3px 15px 0 15px; font-size: clamp(1.2rem, 3vw, 1rem); font-weight: bold; transition: all 0.5s } 
+.menu-links { height: 40px; padding: 3px 15px 0 15px; font-size: clamp(1.2rem, 3vw, 1rem); font-weight: bold; transition: all 0.5s ;white-space: nowrap;} 
 .menu-links:hover { background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; } 
 
 #gallery-content { padding-top: 5%;padding-left: 3%;}/*이미지 트레이 padding left*/
