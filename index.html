@@ -170,8 +170,29 @@
           <a href="https://escookiebook.netlify.app/" target="_blank"><img src="/images/publish2.jpg"></a>
           <a href="https://escookiebook.netlify.app/" target="_blank" class="box-name">My book case : API 작업</a>
           <li>2024-2-11</li>
-        </div>
+        </div>        
         
+        <div class="box">
+          <a href="https://escookie-spotify.netlify.app/" target="_blank"><img src="/images/publish1.jpg"></a>
+          <a href="https://escookie-spotify.netlify.app/" target="_blank" class="box-name">Spotify webpage : 스포티파이
+            홈페이지</a>
+          <li>2024-07-15</li>
+        </div>
+        <div class="box">
+          <a href="https://escookielouis.netlify.app/" target="_blank"><img src="/images/publish3.jpg"></a>
+          <a href="https://escookielouis.netlify.app/" target="_blank" class="box-name">LOUIS VUITTON : 루이비통</a>
+          <li>2024-06-07</li>
+        </div>        
+        <div class="box">
+          <a href="https://escookie-genesis.netlify.app/" target="_blank"><img src="/images/publish4.jpg"></a>
+          <a href="https://escookie-genesis.netlify.app/" target="_blank" class="box-name">GENESIS : 제네시스</a>
+          <li>2024-5-23</li>
+        </div>
+        <div class="box">
+          <a href="https://escookiebook.netlify.app/" target="_blank"><img src="/images/publish2.jpg"></a>
+          <a href="https://escookiebook.netlify.app/" target="_blank" class="box-name">My book case : API 작업</a>
+          <li>2024-2-11</li>
+        </div> 
         
       </div>      
       <div class="arrow"><img src="https://escookiebook.netlify.app/images/arrow-right.svg" alt=""></div>
@@ -204,8 +225,28 @@
 
   <hr />
 
+  <script>
+    let resizeTimeout;
+    let initialWidth = window.innerWidth;
+    let initialHeight = window.innerHeight;
+
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        
+        resizeTimeout = setTimeout(function() {
+            const currentWidth = window.innerWidth;
+            const currentHeight = window.innerHeight;
+
+            // 50px 이상 변화가 있을 때만 새로고침
+            if (Math.abs(currentWidth - initialWidth) > 50 || Math.abs(currentHeight - initialHeight) > 50) {
+                location.reload();
+            }
+        }, 500); // 0.5초 대기 후 실행 (짧은 resize 이벤트 방지)
+    });
+  </script>
+
   <section id="design" class="content4 clearfix wow fadeIn" data-wow-delay="100ms"
-    style="visibility: hidden; animation-delay: 100ms; animation-name: none">
+    style="visibility: hidden; animation-delay: 100ms; animation-name: none;">
     <div class="design-text">
       <h2>Design</h2>
       <div id="menu" class="tab">

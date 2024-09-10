@@ -93,7 +93,8 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #publish>.content2>div>.box { width: 330px; margin: 10px;} 
 #publish>.content2>div>.box>li:first-of-type { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
 #publish>.content2>div>.box>li:nth-of-type(2) { font-size: 14px; color: #6e6e73; } 
-#publish>.content2>div>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; } 
+#publish>.content2>div>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; }
+
 #publish>.content2>div>.box>a>img:hover { border: 1px solid #b4b4b4; transform: scale(1.004) } 
 #publish>.content2>div>.box>.box-name { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
 #publish>.content2>div>.box>.box-name:hover { text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8); } 
@@ -158,7 +159,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 .menu-links:hover { background-color: rgba(63,141,191,1); color: rgba(255,255,255,1); cursor: pointer; } 
 
 #gallery-content { padding-top: 5%;padding-left: 3%;}/*이미지 트레이 padding left*/
-#gallery-content-center img { width: 300px; transition: all 0.5s; margin-left: 12px } /*이미지 사이 간격*/
+#gallery-content-center img { width: 15%; transition: all 0.5s; margin-left: 12px} /*이미지 사이 간격*/
 #gallery-content-center a:hover { opacity: 80%; transition: all 0.5s } 
 
 @media screen and (max-width:600px){
