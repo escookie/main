@@ -114,8 +114,9 @@
           if (isAnimating) return;
           isAnimating = true;
       
+          const boxWidth = boxes[0].offsetWidth + 20;  // 박스 너비와 margin 포함
           boxesContainer.style.transition = 'transform 0.5s ease';
-          boxesContainer.style.transform = 'translateX(-340px)'; // Box width + margin
+          boxesContainer.style.transform = `translateX(-${boxWidth}px)`;  // 동적으로 계산된 크기만큼 이동
       
           setTimeout(() => {
             boxesContainer.style.transition = 'none';
@@ -130,11 +131,12 @@
           if (isAnimating) return;
           isAnimating = true;
       
+          const boxWidth = boxes[0].offsetWidth + 20;  // 박스 너비와 margin 포함
           boxesContainer.insertBefore(boxes.pop(), boxesContainer.firstElementChild);
           boxes.unshift(boxesContainer.firstElementChild);
       
           boxesContainer.style.transition = 'none';
-          boxesContainer.style.transform = 'translateX(-340px)';
+          boxesContainer.style.transform = `translateX(-${boxWidth}px)`;
       
           setTimeout(() => {
             boxesContainer.style.transition = 'transform 0.5s ease';

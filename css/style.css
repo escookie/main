@@ -93,11 +93,13 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #publish>.content2>div>.box { width: 330px; margin: 10px;} 
 #publish>.content2>div>.box>li:first-of-type { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
 #publish>.content2>div>.box>li:nth-of-type(2) { font-size: 14px; color: #6e6e73; } 
-#publish>.content2>div>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; }
+#publish>.content2>div>.box>a>img { border: 1px solid #dddddd; transition: border 0.1s ease, transform 0.1s ease; 
+    width: 100%; object-fit: cover;}/**/
 
 #publish>.content2>div>.box>a>img:hover { border: 1px solid #b4b4b4; transform: scale(1.004) } 
 #publish>.content2>div>.box>.box-name { font-size: 16px; color: #1d1d1f; margin-bottom: 2px; font-weight: 700; } 
-#publish>.content2>div>.box>.box-name:hover { text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8); } 
+#publish>.content2>div>.box>.box-name:hover { text-decoration: underline; text-decoration-color: hsl(0, 0%, 47%, 0.8); }
+
 @media screen and (max-width:860px) {
     #publish>.title>h2 {padding: 0;} 
 }
@@ -106,10 +108,24 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 #publish { display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 4%;}
 #publish>.content2 { display: flex; overflow: hidden; width: 73%;}/*overflow width*/
 
-
 #publish>.content2>div:nth-child(1){position: absolute; left: 10vw;padding-top: 14vh;}
 #publish>.content2>div:nth-child(2){display: flex; justify-content: center; }  
 #publish>.content2>div:nth-child(3){position: absolute; right: 10vw;padding-top: 14vh;}
+
+/**/
+#publish>.content2>.overflow {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;  /* 전체 너비를 차지하게 함 */
+    overflow: hidden;  /* 넘치는 부분은 보이지 않게 */
+}
+#publish>.content2>.overflow .box {
+    flex: 1 0 24%;  /* 박스의 너비를 %로 조정 */
+    max-width: 330px;  /* 박스의 최대 너비 제한 */
+    box-sizing: border-box;
+    margin: 10px;
+}
+
 @media screen and (max-width:1500px) {
     #publish>.content2>div:nth-child(1){left: 8vw}
     #publish>.content2>div:nth-child(3){right: 8vw;}
@@ -121,7 +137,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 @media screen and (max-width:600px) {
     .arrow{display: none;}
     #publish>.content2 { 
-        display: block; /* 슬라이드 레이아웃을 비활성화하고 블록 레이아웃 사용 */
+        display: block;
         width: 100%;
     }
     #publish>.content2>.overflow { 
