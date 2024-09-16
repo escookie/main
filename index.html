@@ -17,6 +17,8 @@
   <script src="js/plugins/wow.min.js"></script>
   <script src="js/function.js"></script>
 
+  
+
   <link href="_css/animated-masonry-gallery.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="_scripts/jquery-2.0.2.min.js"></script>
   <script type="text/javascript" src="_scripts/jquery-ui-1.10.4.min.js"></script>
@@ -100,84 +102,60 @@
     <div class="title">
       <h2>Publish</h2>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const arrowLeft = document.querySelector('.content2 > div:first-child > img');
-        const arrowRight = document.querySelector('.content2 > div:last-child > img');
-        const boxesContainer = document.querySelector('.content2 > div:nth-child(2)');
-        let boxes = Array.from(boxesContainer.children);
       
-        let isAnimating = false;
-      
-        arrowRight.addEventListener('click', () => {
-          if (isAnimating) return;
-          isAnimating = true;
-      
-          const boxWidth = boxes[0].offsetWidth + 20;  // 박스 너비와 margin 포함
-          boxesContainer.style.transition = 'transform 0.5s ease';
-          boxesContainer.style.transform = `translateX(-${boxWidth}px)`;  // 동적으로 계산된 크기만큼 이동
-      
-          setTimeout(() => {
-            boxesContainer.style.transition = 'none';
-            boxesContainer.style.transform = 'none';
-            boxesContainer.appendChild(boxes.shift());
-            boxes.push(boxesContainer.lastElementChild);
-            isAnimating = false;
-          }, 500); // Match the duration of the transition
-        });
-      
-        arrowLeft.addEventListener('click', () => {
-          if (isAnimating) return;
-          isAnimating = true;
-      
-          const boxWidth = boxes[0].offsetWidth + 20;  // 박스 너비와 margin 포함
-          boxesContainer.insertBefore(boxes.pop(), boxesContainer.firstElementChild);
-          boxes.unshift(boxesContainer.firstElementChild);
-      
-          boxesContainer.style.transition = 'none';
-          boxesContainer.style.transform = `translateX(-${boxWidth}px)`;
-      
-          setTimeout(() => {
-            boxesContainer.style.transition = 'transform 0.5s ease';
-            boxesContainer.style.transform = 'none';
-            setTimeout(() => {
-              isAnimating = false;
-            }, 500); // Match the duration of the transition
-          }, 0); // Allow the DOM to update
-        });
-      });      
-      </script>
-      
+    <script src="_scripts/slider.js"></script>
+    <div class="arrow left"><img src="https://escookiebook.netlify.app/images/arrow-left.svg" alt=""></div>
     <div class="content2">
-      <div class="arrow"><img src="https://escookiebook.netlify.app/images/arrow-left.svg" alt=""></div>
+      <!-- <div class="arrow"><img src="https://escookiebook.netlify.app/images/arrow-left.svg" alt=""></div> -->
       <div class="overflow">
         <div class="box">
-          <a href="https://escookie-spotify.netlify.app/" target="_blank"><img src="/images/publish1.jpg"></a>
-          <a href="https://escookie-spotify.netlify.app/" target="_blank" class="box-name">Spotify webpage : 스포티파이
-            홈페이지</a>
-          <li>2024-07-15</li>
+          <a href="https://escookie-genesis.netlify.app/" target="_blank"><img src="/images/publish4.jpg"></a>
+          <a href="https://escookie-genesis.netlify.app/" target="_blank" class="box-name">GENESIS : 제네시스</a>
+          <li>2024-08-16</li>
         </div>
         <div class="box">
           <a href="https://escookielouis.netlify.app/" target="_blank"><img src="/images/publish3.jpg"></a>
           <a href="https://escookielouis.netlify.app/" target="_blank" class="box-name">LOUIS VUITTON : 루이비통</a>
-          <li>2024-06-07</li>
-        </div>        
+          <li>2024-07-03</li>
+        </div>  
         <div class="box">
-          <a href="https://escookie-genesis.netlify.app/" target="_blank"><img src="/images/publish4.jpg"></a>
-          <a href="https://escookie-genesis.netlify.app/" target="_blank" class="box-name">GENESIS : 제네시스</a>
-          <li>2024-5-23</li>
+          <a href="https://escookie-spotify.netlify.app/" target="_blank"><img src="/images/publish1.jpg"></a>
+          <a href="https://escookie-spotify.netlify.app/" target="_blank" class="box-name">Spotify webpage : 스포티파이
+            홈페이지</a>
+          <li>2024-06-15</li>
         </div>
         <div class="box">
           <a href="https://escookiebook.netlify.app/" target="_blank"><img src="/images/publish2.jpg"></a>
           <a href="https://escookiebook.netlify.app/" target="_blank" class="box-name">My book case : API 작업</a>
           <li>2024-2-11</li>
+        </div> 
+
+        <div class="box">
+          <a href="https://escookie-genesis.netlify.app/" target="_blank"><img src="/images/publish4.jpg"></a>
+          <a href="https://escookie-genesis.netlify.app/" target="_blank" class="box-name">GENESIS : 제네시스</a>
+          <li>2024-08-16</li>
+        </div>
+        <div class="box">
+          <a href="https://escookielouis.netlify.app/" target="_blank"><img src="/images/publish3.jpg"></a>
+          <a href="https://escookielouis.netlify.app/" target="_blank" class="box-name">LOUIS VUITTON : 루이비통</a>
+          <li>2024-07-03</li>
         </div>  
+        <div class="box">
+          <a href="https://escookie-spotify.netlify.app/" target="_blank"><img src="/images/publish1.jpg"></a>
+          <a href="https://escookie-spotify.netlify.app/" target="_blank" class="box-name">Spotify webpage : 스포티파이
+            홈페이지</a>
+          <li>2024-06-15</li>
+        </div>
+        <div class="box">
+          <a href="https://escookiebook.netlify.app/" target="_blank"><img src="/images/publish2.jpg"></a>
+          <a href="https://escookiebook.netlify.app/" target="_blank" class="box-name">My book case : API 작업</a>
+          <li>2024-2-11</li>
+        </div> 
         
       </div>      
-      <div class="arrow"><img src="https://escookiebook.netlify.app/images/arrow-right.svg" alt=""></div>
+      <!-- <div class="arrow"><img src="https://escookiebook.netlify.app/images/arrow-right.svg" alt=""></div> -->
     </div>
-    
+    <div class="arrow right"><img src="https://escookiebook.netlify.app/images/arrow-right.svg" alt=""></div>
 
   </section>
 
@@ -205,26 +183,6 @@
 
   <hr />
 
-  <!-- <script>
-    let resizeTimeout;
-    let initialWidth = window.innerWidth;
-    let initialHeight = window.innerHeight;
-
-    window.addEventListener('resize', function() {
-        clearTimeout(resizeTimeout);
-        
-        resizeTimeout = setTimeout(function() {
-            const currentWidth = window.innerWidth;
-            const currentHeight = window.innerHeight;
-
-            // 50px 이상 변화가 있을 때만 새로고침
-            if (Math.abs(currentWidth - initialWidth) > 50 || Math.abs(currentHeight - initialHeight) > 50) {
-                location.reload();
-            }
-        }, 500); // 0.5초 대기 후 실행 (짧은 resize 이벤트 방지)
-    });
-  </script> -->
-
   <section id="design" class="content4 clearfix wow fadeIn" data-wow-delay="100ms"
     style="visibility: hidden; animation-delay: 100ms; animation-name: none;">
     <div class="design-text">
@@ -234,9 +192,6 @@
         <div class="menu-links" class="tablinks" id="filter-coding" onclick="openCity(event, 'cont7')">
           프로모션
         </div>
-        <!-- <div class="menu-links" class="tablinks" id="filter-promo" onclick="openCity(event, 'cont6')">
-              프로모션
-            </div>             -->
         <div class="menu-links" class="tablinks" id="filter-landing" onclick="openCity(event, 'cont1')">
           상세페이지
         </div>
