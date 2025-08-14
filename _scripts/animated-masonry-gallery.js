@@ -33,43 +33,45 @@ $container.isotope({itemSelector : 'img'});
 function check_button(){
 	
 	if(button==1){
-		$("#filter-landing");
+		$("#filter-contents2");
 		}
 	if(button==2){
-		$("#filter-site");
+		$("#filter-contents4");
 		}
 	if(button==3){
 		$("#filter-ppt");
 		}
 	if(button==4){
-		$("#filter-ui");
+		$("#filter-contents6");
 		}
 	if(button==5){
-		$("#filter-event");
+		$("#filter-contents5");
 		}
 	if(button==6){
 		$("#filter-promo");
 		}
 	if(button==7){
-		$("#filter-coding");
+		$("#filter-contents1");
 		}
 	if(button==8){
 		$("#filter-proj");
 		}
 	if(button==9){
-		$("#filter-bro");
+		$("#filter-contents3");
 		}
 }
 	
-	$("#filter-landing").click(function() { $container.isotope({ filter: '.landing' }); button = 1; check_button(); }); //this.style.display='none'
-	$("#filter-site").click(function() {  $container.isotope({ filter: '.site' }); button = 2; check_button();  });
-	$("#filter-ppt").click(function() {  $container.isotope({ filter: '.ppt' }); button = 3; check_button();  });
-	$("#filter-ui").click(function() {  $container.isotope({ filter: '.ui' }); button = 4; check_button();  });
-	$("#filter-event").click(function() {  $container.isotope({ filter: '.event' }); button = 5; check_button();  });
-	$("#filter-promo").click(function() {  $container.isotope({ filter: '.promo' }); button = 6; check_button();  });
-	$("#filter-coding").click(function() {  $container.isotope({ filter: '.coding' }); button = 7; check_button();  });
-	$("#filter-proj").click(function() {  $container.isotope({ filter: '.proj' }); button = 8; check_button();  });
-	$("#filter-bro").click(function() {  $container.isotope({ filter: '.bro' }); button = 9; check_button();  });
+$("#filter-contents1").click(function() {  $container.isotope({ filter: '.contents1' }); button = 7; check_button();  });	
+$("#filter-contents2").click(function() { $container.isotope({ filter: '.contents2' }); button = 1; check_button(); }); //this.style.display='none'
+$("#filter-contents3").click(function() {  $container.isotope({ filter: '.contents3' }); button = 9; check_button();  });
+$("#filter-contents4").click(function() {  $container.isotope({ filter: '.contents4' }); button = 2; check_button();  });
+$("#filter-contents5").click(function() {  $container.isotope({ filter: '.contents5' }); button = 5; check_button();  });	
+$("#filter-contents6").click(function() {  $container.isotope({ filter: '.contents6' }); button = 4; check_button();  });
+
+$("#filter-ppt").click(function() {  $container.isotope({ filter: '.ppt' }); button = 3; check_button();  });
+$("#filter-promo").click(function() {  $container.isotope({ filter: '.promo' }); button = 6; check_button();  });
+$("#filter-proj").click(function() {  $container.isotope({ filter: '.proj' }); button = 8; check_button();  });
+	
 	
 
 check_button();
