@@ -108,7 +108,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 }
 
 /* slide */
-#publish { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 8%; } 
+#publish { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 5%; } 
 #publish>.content2 { display: flex; overflow: hidden; width: 80%; position: relative; } 
 
 .arrow { position: absolute; cursor: pointer; } 
@@ -131,7 +131,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 
 
 /* section - skills */
-#skills { display: flex; justify-content: center; align-items: top; width:100%; padding-top: 10%; padding-bottom: 2%; } 
+#skills { display: flex; justify-content: center; align-items: top; width:100%; padding-top: 6%;  } 
 #skills>h2 { font-size: clamp(2.5rem, 5vw, 5rem); font-weight:500; color:#7576a0; letter-spacing:1px; padding-right: 3%; } 
 #skills>.skill { display: flex; flex-wrap: wrap; } 
 #skills>.skill>div { transition:transform 0.1s ease } 
