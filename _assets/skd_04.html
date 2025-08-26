@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>  
+    .sk_wr1 {margin:auto; width: 100%; max-width: 860px; text-align: center; justify-content: center; color: #1e1e1c}
+    .sk_wr1_1 {margin:auto; width: 100%; max-width: 860px; text-align: center; justify-content: center; color: #1e1e1c; background-image: url('/image/catalog/Seller_2993/11_de/sk_dbp19-20230221054338.jpg'); background-size: 100%;}/*ㅁ-ㅁ*/
+    .sk_wr2 {margin:auto; width: 100%; max-width: 860px; text-align: center; display: flex; flex-wrap:wrap;color: #1e1e1c}/*백그라운드 가운데 텍스트 전체*/
+    .sk_wr2_1 {max-width: 100%; position: relative; margin: 0 auto}/*백그라운드 가운데 텍스트 내부*/
+    .sk_wr2_2 {position: absolute; top:0; width: 100%}/*백그라운드 가운데 텍스트 내부*/  
+    .sk_wr2_3 {position: absolute; top:0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center;}/*백그라운드 가운데 텍스트 내부*/
+    .sk_wr3 {margin:auto; width: 100%; max-width: 860px; text-align: center; justify-content: center; color: #1e1e1c; background-color: #eee} /*제품정보*/
+    .sk_wr4 {align-items: center; display:flex; list-style:none; width:100%; margin: auto;} /*vertical align 정렬*/
+    
+    /*글자크기*/
+    .sk_t1_5 {font-size: clamp(1rem, 1.5vw, 1.5rem);line-height: 150%;} 
+    .sk_t1_6 {font-size: clamp(0.7rem, 1.6vw, 1.5rem);line-height: 150%;}
+    .sk_t1_7 {font-size: clamp(1rem, 1.7vw, 1.7rem);line-height: 150%;}
+    .sk_t1_8 {font-size: clamp(1rem, 1.8vw, 1.8rem);line-height: 150%;}
+    .sk_t2 {font-size: clamp(1rem, 2vw, 2rem);line-height: 160%;}  
+    .sk_t2_3 {font-size: clamp(0.7rem, 2.3vw, 2.0rem);line-height: 160%;}  
+    .sk_t2_5 {font-size: clamp(1rem, 2.5vw, 2.0rem);line-height: 160%;} 
+    .sk_t2_7 {font-size: clamp(1rem, 2.7vw, 2.5rem);line-height: 150%;}
+    .sk_t3 {font-size: clamp(1.3rem, 3vw, 3rem);line-height: 150%;}  
+    .sk_t3_5 {font-size: clamp(1.3rem, 3.5vw, 3.0rem);line-height: 160%;}
+    .sk_t4 {font-size: clamp(1.5rem, 4vw, 4rem);line-height: 140%;}  
+    .sk_t4_5 {font-size: clamp(2.4rem, 4.5vw, 4.5rem);line-height: 130%;}
+    .sk_t5 {font-size: clamp(1.5rem, 5vw, 5rem);line-height: 140%;}  
+    .sk_t5_5 {font-size: clamp(2.5rem, 5.5vw, 5rem);line-height: 130%;}
+    .sk_t6 {font-size: clamp(2.5rem, 6vw, 6rem);line-height: 130%;}  
+    .sk_t6_5 {font-size: clamp(2.5rem, 6.5vw, 6.0rem);line-height: 130%;}
+    .sk_t7 {font-size: clamp(2.5rem, 7vw, 7rem);line-height: 130%; letter-spacing: -1px;}
+    .sk_t8 {font-size: clamp(2.5rem, 8vw, 8rem);line-height: 110%; letter-spacing: -1px;}
+    .sk_t9 {font-size: clamp(2.5rem, 9vw, 9rem);line-height: 130%; letter-spacing: -2px;}
+    .sk_t11 {font-size: clamp(2.5rem, 11vw, 11rem);line-height: 130%; letter-spacing: -2px;}
+    .sk_font {word-break:keep-all;word-wrap:break-word;box-sizing:border-box; line-height: 130%;}
+    /*글자두께*/
+    .sk_b {font-weight: 700}
+    
+    /*박스*/
+    .sk_box0 {width: 90%; display: inline-block; padding: 25% 10%; margin: 2%; background-color: #00a0f4; color: #FFF; border-radius: 150px; text-align: center;}/*원*/
+    .sk_box1 {width: fit-content; display: inline-block; padding: 1.8% 4%; background-color: #999; color: #fff; border-radius: 50px; text-align: center}/*배경채워진 박스*/
+    .sk_box1_big {width: 60%; display: inline; padding: 3%; margin: 0 auto; background-color: #fff; border-radius: 20px; text-align: center}/*배경채워진 박스*/
+    .sk_box1_blue {width: fit-content; display: inline-block; padding: 1.8% 4%; background-color: #006fc1; color: #fff; border-radius: 50px; text-align: center}/*배경채워진 박스*/
+    .sk_box_line {display: inline-block; width: 80%; border: 1px solid #111; text-align: center; padding: 4%}/*라인 박스*/
+    .sk_box_line_white {display: inline-block; width: fit-content; border: 1px solid #fff; color: #fff; text-align: center; padding: 1.8% 5% 1.5% 5%}/*라인 박스*/
+    .sk_box4 {display: inline-block; width: 50%; padding: 3%; background-color: #c73d32; color: #fff; text-align: center;}/*각진박스*/
+    .sk_box4_brown {display: inline-block; width: fit-content; padding: 3% 6%; background-color: #b79f79; color: #fff; text-align: center;}/*각진박스*/
+    .sk_box_trans {display: inline-block; padding: 3% 0 2% 0; background-color: rgba(255, 255, 255, 0.5); text-align: center;}/*opacity박스*/
+    
+    /*2칸, 3칸, 4칸, 5칸, 6칸*/
+    .sk_q2{grid-template-columns: 40% 40%; display: grid; justify-content: center}
+    .sk_q3{grid-template-columns: 33% 33% 33%; display: grid; justify-content: center}
+    .sk_q4{grid-template-columns: 25% 25% 25% 25%; display: grid; justify-content: center}
+    .sk_q5{grid-template-columns: 20% 20% 20% 20% 20%; display: grid; justify-content: center}
+    .sk_q6{grid-template-columns: 16% 16% 16% 16% 16% 16%; display: grid; justify-content: center}
+  
+    .sk_fl1 {display: flex; justify-content: center;} /* align-items: center; */
+  
+    /*위 띄어쓰기*/
+    .sk_pt1 {padding-top: 1%} .sk_pt2 {padding-top: 2%} .sk_pt3 {padding-top: 3%} .sk_pt4 {padding-top: 4%} .sk_pt5 {padding-top: 5%} .sk_pt6 {padding-top: 6%} .sk_pt7 {padding-top: 7%} .sk_pt8 {padding-top: 8%} .sk_pt8 {padding-top: 8%} .sk_pt9 {padding-top: 9%} .sk_pt10 {padding-top: 10%}
+    /*아래 띄어쓰기*/
+    .sk_pb1 {padding-bottom: 1%} .sk_pb2 {padding-bottom: 2%} .sk_pb3 {padding-bottom: 3%} .sk_pb4 {padding-bottom: 4%} .sk_pb5 {padding-bottom: 5%} .sk_pb6 {padding-bottom: 6%} .sk_pb7 {padding-bottom: 7%} .sk_pb10 {padding-bottom: 10%}
+  
+    .sk_mt1 {margin-top: 1%} .sk_mt2 {margin-top: 2%} .sk_mt3 {margin-top: 3%} .sk_mt4 {margin-top: 4%} .sk_mt5 {margin-top: 5%} .sk_mt7 {margin-top: 7%} .sk_mt10 {margin-top: 10%}
+    .sk_mb1 {margin-bottom: 1%} .sk_mb2 {margin-bottom: 2%} .sk_mb3 {margin-bottom: 3%} .sk_mb4 {margin-bottom: 4%} .sk_mb5 {margin-bottom: 5%} .sk_mb7 {margin-bottom: 7%} .sk_mb10 {margin-bottom: 10%}  
+  
+    .sk_ps3 {padding: 0 3%} .sk_ps5 {padding: 0 5%} .sk_ps10 {padding: 0 10%}
+    .sk_ms3 {margin: 0 3%} .sk_ms5 {margin: 0 5%} .sk_ms10 {margin: 0 10%}
+    .sk_pd3_5 {padding: 4% 5%} .sk_pd5_10 {padding: 5% 10%} .sk_pd5_10_1 {padding: 5% 10% 0% 10%} .sk_pd5_10_2 {padding: 0% 10% 5% 10%}
+    
+    .img1 {width: 5%}
+  
+    @media all and (min-width:600px){
+    .sk_pad1{padding-top: 11%}
+    .sk_mob_none{display: none}
+    }
+  
+    /*모바일ver*/
+    @media all and (max-width:700px){
+    .sk_pad1{padding-top: 20%}
+    .sk_none{display: none}
+    .sk_pc_none{display: none}
+    }  
+  
+    .table1 {width: 100%; max-width: 100%}
+    .table1 td {padding: 1.5%  2%; border: 1px solid #ddd}
+    .table1 td:first-child {width: 25%; background-color: #f3f3f3; font-weight: 700}
+    .table1 tr:first-child {border-top: 3px solid #231f20}
+  
+  </style>
+</head>
+<body>
+ 
+  <div class="sk_wr2" style="color: #fff">
+    <div class="sk_wr2_1"><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_1-20230703052217-1688361737.jpg" width="100%">
+        <div class="sk_wr2_2" style="padding: 30% 0 0 0">
+            <div style="border-top: 1px solid #fff; width: 50%; margin-left: 25%; margin-right: 25%"></div>
+            <div class="sk_t1_6 sk_pt1 sk_pb1">전 세계 에스테틱 전문 브랜드 NO.1 스킨덤</div>
+            <div style="border-top: 1px solid #fff; width: 50%; margin-left: 25%; margin-right: 25%"></div>
+            <div class="sk_t4_5 sk_b sk_pt5">애크니 밸런스 세럼</div>
+            <div class="sk_t2_7 sk_pt1">수분길을 열어 더 촉촉하게</div>
+        </div>
+        <div class="sk_wr2_2" style="padding: 137% 0 0 0">
+          <div class="sk_t2_7 sk_b">진정케어, 피부결을 순하게</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_6-20230703052217-1688361739.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div class="sk_t4 sk_b">세럼으로 진정하다, 내 피부의 편안함</div>
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_7-20230703052217-1688361739.jpg" width="10%"></div>
+    <div class="sk_t4 sk_b">업그레이드 전성분 포인트</div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_8-20230703052217-1688361739.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div class="sk_ps5">
+      <div class="sk_t4 sk_b">자몽추출물</div>
+      <div class="sk_t2_5 sk_pt3">비타민 일일 권장량의 2배 가량의 비타민을 함유하고 있는 자몽은 칼륨과 마그네슘, 아미노산 등 피부를 위한 성분을 다량으로 함유하고 있어 피부를 더욱 매끄럽고 촉촉하게 가꾸는데 도움을 줍니다</div>
+      <div class="sk_t2_5 sk_pt3">자몽에 함유되어있는 다량의 비타민 C는 피부의 콜라겐 생성을 촉진해 멜라닌 색소의 침착을 막는 과정에 큰 도움을 줄 수 있어 생기있는 피부로 가꾸는데 도움을 줍니다</div>
+      <div class="sk_t1_8 sk_pt3">*원료적 특성에 한함</div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_2-20230703052217-1688361738.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div class="sk_t4 sk_b">수분 잠금 시스템 <br> 애크니 밸런스 세럼</div>
+    <div class="sk_pt3 sk_pb3"><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_3-20230703052217-1688361738.jpg" width="55%"></div>
+    <div class="sk_t3">속당김 없이 온 종일 맑은 피부 <br> 쫀쫀하지만 끈적임 없는 텍스처</div>
+    <div class="sk_t3_5 sk_b sk_pt1" style="color: #35ae47">피부의 수분을 부스터 업</div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_4-20230703052217-1688361738.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt3">
+    <div class="sk_ps5">
+      <div class="sk_t3_5 sk_b">피부를 위해 저자극으로 순하게</div>
+      <div class="sk_t2_7 sk_pt2">스트레스로 달아올라 민감해진 피부에 자극이 적은 텍스처로 순하게 진정 케어</div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt3">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_9-20230703052217-1688361739.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt3">
+    <div class="sk_ps5">
+      <div class="sk_t4 sk_b">섬세하고 건강하게 진정케어</div>
+      <div class="sk_t3 sk_pt2">반복되는 일상속에서 상처입어 무너진 피부결을 보다 섬세하고 건강하게 차분한 피부로</div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt3">
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_10-20230703052217-1688361739.jpg" width="100%"></div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt3 sk_pb7">
+    <div class="sk_ps5">
+      <div class="sk_t4 sk_b">피부층 깊은 곳 까지</div>
+      <div class="sk_t3 sk_pt2">애크니 밸런스 세럼의 수분감과 진정을 위한 촉촉한수분감을 피부층 깊은 곳 까지</div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1" style="background-color: #f6f6f6; padding: 9% 0">
+    <div class="sk_t2_7">스킨덤 세럼으로 촉촉함의</div>
+    <div class="sk_t4 sk_b">수분 정원을 꿈꾸다</div>
+    <div><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_11-20230703052217-1688361740.jpg" width="60%"></div>
+    <div class="sk_t2_7 sk_pt5 sk_ps10">외부 환경의 자극과 생체주기마다 예민해지는 피부에 편안한 진정을 선사합니다</div>
+  </div>
+  
+  <div class="sk_wr1 sk_pt5">
+    <div class="sk_fl1" style="align-items: center">
+      <div style="width: 30%"><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_12-20230703052217-1688361740.jpg" width="100%"></div>
+      <div style="width: 70%; text-align: left; padding-left: 3%">
+        <div class="sk_t4 sk_b">올 스킨 케어<br> 애크니 밸런스 세럼</div>
+        <div class="sk_pt3 sk_pb3"><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_5-20230703052217-1688361739.jpg" width="100%"></div>
+        <div class="sk_t3">맑은 인상을 위한 미백 케어를 피부결을 더욱 화사하게 촉촉한 텍스처로 촘촘히 도포</div>
+        <div class="sk_t3_5 sk_b sk_pt1" style="color: #35ae47">피부의 수분을 부스터 업</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sk_wr2">
+    <div class="sk_wr2_1"><img src="https://d3d3ajccnahae5.cloudfront.net/image/catalog/Seller_317/04_skd/sk_13-20230703052217-1688361740.jpg" width="100%">
+        <div class="sk_wr2_3" style="padding: 0 23% 0 23%">
+          <div class="sk_t3 sk_b" style="line-height: 200%">
+            쫀쫀하지만 끈적임 없이 <br>
+            고보습 밀착 텍스처<br>
+            피부를 위한 스킨덤 세럼
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="sk_wr1 sk_t2 sk_pt7">
+    <table class="table1">
+      <tbody>
+          <tr>
+            <td>제품명</td>
+            <td>애크니 밸런스 세럼</td>
+          </tr>
+          <tr>
+            <td>용량</td>
+            <td>100ml</td>
+          </tr>
+          <tr>
+            <td>사용기한</td>
+            <td>용기 별도 표기</td>
+          </tr>
+          <tr>
+            <td>개봉 후 사용기한</td>
+            <td>개봉 후 8개월 이내 사용</td>
+          </tr>
+          <tr>
+            <td>사용방법</td>
+            <td>적당량을 취해 피부에 도포 후 가볍게 두드려 흡수시킵니다.</td>
+          </tr>
+          <tr>
+            <td>제조국</td>
+            <td>대한민국</td>
+          </tr>
+          <tr>
+            <td>전성분</td>
+            <td>자몽추출물, 자몽씨추출물, 부틸렌글라이콜, 정제수, 페녹시에탄올</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <br><br>
+  
+</body>
+</html>
+
+
