@@ -109,7 +109,7 @@ header>.container>nav>.gnb>li:hover>a,header>.container>nav>.gnb>li>a:focus,head
 }
 
 /* slide */
-#publish { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 3%; } 
+#publish { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 7%; } 
 #publish>.content2 { display: flex; overflow: hidden; width: 80%; position: relative; } 
 
 .arrow { position: absolute; cursor: pointer; } 
